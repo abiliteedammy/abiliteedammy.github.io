@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NaijaKetodiet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+   ;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram
+ {
+  background: rgb(50, 70, 247);
+  color: white;
+}
+    body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+}
+    .jumbotron {
+      background-color: #286ef1; /* Orange */
+      color: #ffffff;
+      padding: 100px 25px;
+}
+
+.container-fluid {
+    font-size: 20px;
+  padding: 10px 50px;
+}
+    .bg-grey {
+  background-color: #f6f6f6;
+    }
+    .logo-small {
+  color: #286ef1;
+  font-size: 50px;
+}
+
+.logo {
+  color: #286ef1;
+  font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color:#286ef1;
+}
+
+.carousel-indicators li {
+  border-color: #286ef1;
+}
+
+.carousel-indicators li.active {
+  background-color:#286ef1;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.item span {
+  font-style: normal;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #286ef1;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #286ef1 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+footer .glyphicon  {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:#286ef1;
+}
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+    </style>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><em>Ketonaijastyle</em></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                   
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#services">FOOD PLAN</a></li>
+
+                    <li><a href="#Recipes">RECIPES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#Downloadapp">DOWNLOAD APP</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+
+        <h1>Naija Ketodiet</h1>
+        <p>Free online diet plan for losing weight and also for keeping in shape<br>
+            find nutrition facts,method of cooking various food and best exercise</p>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger" style="background:rgb(233, 233, 240); color:#286ef1">
+                        <strong>Subscribe</strong>
+                        <important></important>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!----HOME section-->
+    <div id="HOME" class="container-fluid"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+
+                <p><b>This site will show you how to finally take control of your health and weight.</b>
+
+
+                    <br>
+                    You’ll learn exactly how to cook, eat, and live to lose the weight you want, get more energy, and
+                    feel better than you ever have before…without having to sacrifice tons of time, the foods you know
+                    and love, or risking personal injury.
+                    <br><br>
+                    Keto in naijadiet is all about learning how to make the right changes in your lifestyle so that you
+                    can take your body to its maximum level.
+                    <br><br>
+                    In most cases, these changes are very easy to make and will be incredibly powerful.
+                    <br><br>
+                    Thousands of others have already changed their lives by following the simple and effective
+                    principles taught on this site and applying a bit of willpower. Now you can too!
+                </p>
+                <h><b>This is a support group</b></h>
+                <p>For ladies who fall in any categories below:</p>
+                <p>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-heart"></span> Who would like to embark on a healthly
+                            lifestyle.</li>
+                        <li><span class="glyphicon glyphicon-heart"></span> Who are motivated to look slimmer,
+                            healthier and slicker.</li>
+                        <li><span class="glyphicon glyphicon-heart"></span> who are exicted to start on the ketogenie
+                            diet journey.</li>
+                        <li><span class="glyphicon glyphicon-heart"></span> Who already started the lifestyle and want
+                            to maintain it.</li>
+                        <li><span class="glyphicon glyphicon-heart"></span> Who is willing to help and encourage others
+                            to live healthy and fullfiled lives...</li>
+                    </ul>
+                </p>
+                <button class="btn btn-default btn-lg">Get Started</button>
+            </div>
+            <div class="row text-center slideanim">
+                <div class="col-sm-4">
+                    <p>Yes ladies we are here to help and encourage eachother.so what are we waiting for lets
+                        do this in naija style... <a href="#" class="fas fa facebook"></a> </p>
+                    <img src="C:\Users\Ability\Documents\ketodiet/ketopic.jpg" style="width:100%;height:50%;text-align: center;"
+                        onclick="onClick(this)" alt="keto food">
+                    <img src="C:\Users\Ability\Documents\ketodiet/ketofoodie (1).jpeg" style="width:100%;height:50%;text-align: center;"
+                        onclick="onClick(this)" alt="keto food">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <div class="row text-center slideanim">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---About section-->
+    <div id="About" class="container-fluid"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <h2>About Naija ketostyle</h2>
+
+            <p>Over the years, thousands of dieters have achieved weight loss success with Ketonaijastyle. Here are some
+                of our most inspiring weight loss success stories! Read on to find out how each 
+               achieved their weight loss,
+
+                <p> keto diet is well known for being a low carb diet, where the body produces ketones in the liver to
+                        be used as energy. It’s referred to as many different names – ketogenic diet, low carb diet, low
+                        carb high fat (LCHF), etc.
+        
+                        When you eat something high in carbs, your body will produce glucose and insulin.</p>
+                    <ul>
+                        <li>
+                            Glucose is the easiest molecule for your body to convert and use as energy so that it will be
+                            chosen over any other energy source.
+                        </li>
+                        <li>Insulin is produced to process the glucose in your bloodstream by taking it around the body.</li>
+                    </ul> 
+                </p>
+                <p>Weight loss diets for humans that are based on a high intake of protein but low intake of fermentable carbohydrate may alter microbial activity and bacterial populations in the large intestine and thus impact on gut health</p>
+
+            <h2>What is Ketogenic Diet</h2>
+            <p>The keto diet, short for "ketogenic," involves eating a high amount of fat, a moderate amount of protein and very few carbs — even fruit is off the table. As with any fad diet, adherents tout weight loss, increased energy and greater mental clarity among the benefits.
+                Keto in naijadiet is all about learning how to make the right changes in your lifestyle so that you
+                can take your body to its maximum level.
+                <br><br>
+                In most cases, these changes are very easy to make and will be incredibly powerful.
+                <br><br>
+                Thousands of others have already changed their lives by following the simple and effective
+                principles taught on this site and applying a bit of willpower. Now you can too!
+            </p>
+            <h2><b>Benefit of ketodiet</b></h2>
+            <p><ul>
+            <li>Burns fat: You can drop a lot of weight — and quickly — on the keto diet.[3] Ketones suppress ghrelin — your hunger hormone — and increase cholecystokinin (CCK), which makes you feel full.[4] Reduced appetite means it’s easier to go for longer periods without eating, which encourages your body to dip into its fat stores for energy. Learn more here about the keto diet and weight loss. </li>
+<li>Reduces inflammation: The keto diet is anti-inflammatory, and could protect you against major degenerative diseases such as Alzheimer’s and cancer.[5]</li>
+<li>Fuels and feeds your brain: Ketones provide an immediate hit of energy for your brain, and up to 70% of your brain’s energy needs when you limit carbs.[6] Fat also feeds your brain and keeps it strong. Your brain is at least 60% fat, so it needs loads of good fats to keep it running.[7] Essential fatty acids such as omega-3s help grow and develop the brain, while saturated fat keeps myelin — the layer of insulation around the brain — strong so your neurons can communicate with each other.</li>
+<li>Increases energy: Ketosis helps the brain create more mitochondria, the power generators within your cells.[8] More energy in your cells means more energy for you to get stuff done.</li>
+<li>Lowers blood sugar: The keto diet may reverse and even cure diabetes. Keto stabilizes insulin levels and lowers blood sugar, to the point that many diabetics</li>
+</ul>
+</p>
+            <h2>What happens to my body?</h2>
+            <h2>what to eat on a ketodiet</h2>
+            <h2>How to reach ketosis</h2>
+            <h2>Getting Started</h2>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="row text-center slideanim">
+        <div id="services" class="container-fluid"></div>
+        <div class="container-fluid text-center">
+
+            <h2>FOOD PLAN</h2>
+            <h4>Visual keto guides</h4>
+            <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+            onclick="onClick(this)" alt="keto food">
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                    <h4><a href="#VEGETABLES">VEGETABLES</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <h4><a href="#FRUITS">FRUITS</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <h4><a href="#DRINKS">DRINKS</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-leaf"></span>
+                    <h4><a href="#SNACKS">SNACKS</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate"></span>
+                    <h4><a href="#FATS AND SAUCES">FATS AND SAUCES</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-wrench"></span>
+                    <h4><a href="#NUTS">NUTS</a></h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+
+               
+                    </div>
+                    <!-----for vegetables section-->
+
+<div id="VEGETABLES" class="container-fluid"></div>
+<div class="container-fluid" style="text-align: left ">
+ 
+            <h2>VEGETABLES</h2>
+            <img src="C:\Users\Ability\Documents\ketodiet/healthy-diet-1062x598.jpg" style="width:100%;height:50%;text-align: center;"
+                onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+            <p>here are the list of fruits to be included in your keto diet
+                <ul>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                </ul>
+                </p>
+   
+    </div>
+</div>
+<!----for fruit section-->
+                    <div id="FRUITS" class="container-fluid"></div>
+                    <div class="container-fluid" style="text-align: left ">
+                     
+                                <h2>FRUITS</h2>
+                                <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+                                    onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+                                <p>here are the list of fruits to be included in your keto diet
+                                    <ul>
+                                        <li>Orange: its naturally sweet</li>
+                                        <li>Orange: its naturally sweet</li>
+                                        <li>Orange: its naturally sweet</li>
+                                        <li>Orange: its naturally sweet</li>
+                                        <li>Orange: its naturally sweet</li>
+                                    </ul>
+                                    </p>
+                       
+                        </div>
+                </div>
+
+<!---Drinks section-->
+<div id="DRINKS" class="container-fluid"></div>
+<div class="container-fluid" style="text-align: left ">
+ 
+            <h2>DRINKS</h2>
+            <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+                onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+            <p>here are the list of fruits to be included in your keto diet
+                <ul>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                </ul>
+                </p>
+   
+    </div>
+
+    <!----SNACKS SECTION-->
+    <div id="SNACKS" class="container-fluid"></div>
+<div class="container-fluid" style="text-align: left ">
+ 
+            <h2>SNACKS</h2>
+            <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+                onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+            <p>here are the list of fruits to be included in your keto diet
+                <ul>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                </ul>
+                </p>
+   
+    </div>
+
+    <!----FATS AND SAUCE-->
+    <div id="FATS AND SAUCES" class="container-fluid"></div>
+<div class="container-fluid" style="text-align: left ">
+ 
+            <h2>FATS AND SAUCES</h2>
+            <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+                onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+            <p>here are the list of fruits to be included in your keto diet
+                <ul>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                </ul>
+                </p>
+   
+    </div>
+
+    <!---NUTS SECTION-->
+    <div id="NUTS" class="container-fluid"></div>
+<div class="container-fluid" style="text-align: left ">
+ 
+            <h2>NUTS</h2>
+            <img src="C:\Users\Ability\Documents\ketodiet/ketof.png" style="width:100%;height:50%;text-align: center;"
+                onclick="onClick(this)" alt="keto food">
+<p>Most fruits contains quite a lots of carbs.That's why they taste sweet</p>
+            <p>here are the list of fruits to be included in your keto diet
+                <ul>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                    <li>Orange: its naturally sweet</li>
+                </ul>
+                </p>
+   
+    </div>
+
+
+
+<!---recipe section-->
+                <div id="Recipes" class="container-fluid"></div>
+                <div class="container-fluid text-center bg-grey">
+                    <h2>Keto Recipes</h2>
+                    <h4>Keto recipes to follow... </h4>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="C:\Users\Ability\Documents\ketodiet/ketofoodie (1).jpg" style="width:100%;height:50%;text-align: center;"
+                                    onclick="onClick(this)" alt="keto food">
+                                <p><strong>Paris</strong></p>
+                                <p>Yes, we built Paris</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="C:\Users\Ability\Documents\ketodiet/ketofoodie (3).jpg" style="width:100%;height:50%;text-align: center;"
+                                    onclick="onClick(this)" alt="keto food">
+                                <p><strong>New York</strong></p>
+                                <p>We built New York</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <img src="C:\Users\Ability\Documents\ketodiet/ketofoodie (4).jpg" style="width:100%;height:50%;text-align: center;"
+                                    onclick="onClick(this)" alt="keto food">
+                                <p><strong>San Francisco</strong></p>
+                                <p>Yes, San Fran is ours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="text-align: left">follow this link to check recipe for stomach fat burning<a href="https://www.w3schools.com"
+                                title="Visit w3schools">www.w3schools.com</a></p>
+                        <p style="text-align: left">follow this link to check recipe for stomach fat burning<a href="https://www.w3schools.com"
+                                title="Visit w3schools">www.w3schools.com</a></p>
+                        <p style="text-align: left">follow this link to check recipe for stomach fat burning<a href="https://www.w3schools.com"
+                                title="Visit w3schools">www.w3schools.com</a></p>
+                        <p style="text-align: left">follow this link to check recipe for stomach fat burning<a href="https://www.w3schools.com"
+                                title="Visit w3schools">www.w3schools.com</a></p>
+                        <p style="text-align: left">follow this link to check recipe for stomach fat burning<a href="https://www.w3schools.com"
+                                title="Visit w3schools">www.w3schools.com</a></p>
+                    </div>
+                </div>
+            
+            <h2> Testimonies</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"This site is the best. I am so happy with the result! "<br><span style="font-style:normal;">Michael
+                                Roe, Lagos State, Nigeria</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"One word... WOW!am loving my new me!"<br><span style="font-style:normal;">John Doe,
+                                Nigeria </span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Could I... BE any more happy with this ketodiet?"<br><span style="font-style:normal;">Racheal
+                                Yetunde</span></h4>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="contact" class="container-fluid"> </div>
+            <div class="container-fluid bg-grey">
+                <h2 class="text-center">CONTACT</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>Contact us and we'll get back to you within 24 hours.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                    required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----footer-->
+            <footer class="container-fluid text-center">
+                    <p> <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a></p>
+                <a href="#myPage" title="To Top">
+
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+               
+                <p>Designed by Abilitee_Concept <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+            </footer>
+            <script>
+                $(document).ready(function () {
+                    // Add smooth scrolling to all links in navbar + footer link
+                    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+
+                            // Store hash
+                            var hash = this.hash;
+
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 900, function () { // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
+                })
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            </script>
+</body>
+
+
+</html>
